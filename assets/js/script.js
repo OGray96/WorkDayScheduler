@@ -1,11 +1,11 @@
 
-//using Moment.js to capture current day and applying it to the text content of the current day id
+//using Moment.js to capture current day and applying it to the text content of the current day id. Have customised format
 var currentDay = moment().format("dddd, MMMM Do YYYY");
 $("#currentDay").text(currentDay);
 
 //creating a variable capturing the current hour
 var currentTime = moment().format("HH");
-//converting string to number
+//converting string to number otherwise can't compare it later on in the if statement
 currentTime = +currentTime;
 
 //runs when page loads
